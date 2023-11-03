@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theme</title>
+    <link rel="web icon" href="/img/5720464.png">
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .box{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            transition:all 1s ease-in;
+            overflow: hidden;
+            background:url('/img/man-2425121_1280.jpg') no-repeat center center/cover;
+
+        }
+        .themebtn{
+            border-radius: 4px;
+            border: none;
+            /* border-bottom: 1px solid crimson; */
+            margin:55px;
+            padding:5px 10px;
+            font-size: 2rem;
+            font-weight: bold;
+            font-family:'Courier New', Courier, monospace;
+            color:whitesmoke;
+            filter:blur(1px);
+            /* text-shadow: 1px 1px 2px white; */
+            background: transparent;
+        }
+        .darktheme{
+            background:url('/img/kitten-6394969_1280.jpg') no-repeat center center/cover;
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <button class="themebtn">click me</button>
+    </div>
+    <script>
+        themebtn=document.querySelector(".themebtn");
+        themebtn.addEventListener("click",()=>{
+            screen=document.querySelector(".box");
+            screen.classList.toggle('darktheme');
+        });
+        document.cookie="myIntro='hyIAmKuldeep'";
+
+         </script>
+</body>
+</html>
